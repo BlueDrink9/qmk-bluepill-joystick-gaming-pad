@@ -2,11 +2,9 @@
 
 ![gaming_pad](imgur.com image replace me!)
 
-*A short description of the keyboard/project*
+*One handed 20 key custom keyboard for gaming, with included joystick*
 
 * Keyboard Maintainer: [bluedrink9](https://github.com/bluedrink9)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
 
 Make example for this keyboard (after setting up your build environment):
 
@@ -14,14 +12,14 @@ Make example for this keyboard (after setting up your build environment):
 
 Flashing example for this keyboard:
 
-    make gaming_pad:default:flash
-
-See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
+    dfu-util -a 2 -d 1EAF:0003 -D .build/gaming_pad_default.bin
 
 ## Bootloader
 
 Enter the bootloader in 3 ways:
 
 * **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard
-* **Physical reset button**: Briefly press the button on the back of the PCB - some may have pads you must short instead
-* **Keycode in layout**: Press the key mapped to `QK_BOOT` if it is available
+* **Physical reset button**: On the bluepill, hold the KEY0 button then press the NRST button.
+* **Keycode in layout**: Hold 5, then press space
+
+The bootloader only persists briefly, so start the dfu flash asap.

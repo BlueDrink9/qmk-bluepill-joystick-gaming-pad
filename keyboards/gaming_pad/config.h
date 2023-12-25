@@ -22,5 +22,13 @@
 #define JOYSTICK_BUTTON_COUNT 1
 // Min 0, max 6: X, Y, Z, Rx, Ry, Rz
 #define JOYSTICK_AXIS_COUNT 2
+#define JOYXPIN B0
+#define JOYYPIN B1
 // Min 8, max 16
 // #define JOYSTICK_AXIS_RESOLUTION 10
+#define ANALOG_JOYSTICK_CLICK_PIN A0
+
+#define JOY_BUTTON_PIN B5
+#define JOY_BUTTON_KEY KC_X
+
+#define DEBUG_MATRIX_SCAN_RATE

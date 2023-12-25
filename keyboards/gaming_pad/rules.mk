@@ -1,2 +1,1 @@
-# JOYSTICK_ENABLE = yes
-# NKRO_ENABLE = yes           # Enable N-Key Rollover
+JOYSTICK_DRIVER=analog
