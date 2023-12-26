@@ -6,8 +6,8 @@
     "diode_direction": "ROW2COL",
     "features": {
         "bootmagic": false,
-        "command": true,
-        "console": true,
+        "command": false,
+        "console": false,
         "analog_driver": true,
         "joystick": true,
         // "lto": true,

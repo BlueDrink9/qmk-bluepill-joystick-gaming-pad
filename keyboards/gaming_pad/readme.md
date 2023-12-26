@@ -16,10 +16,10 @@ Flashing example for this keyboard:
 
 ## Bootloader
 
-Enter the bootloader in 3 ways:
+Enter the bootloader in 2 ways:
 
-* **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard
 * **Physical reset button**: On the bluepill, hold the KEY0 button then press the NRST button.
 * **Keycode in layout**: Hold 5, then press space
+<!-- * **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard -->
 
-The bootloader only persists briefly, so start the dfu flash asap.
+The bootloader only persists briefly, so start the dfu flash asap (leaving ~1 second for MCU to reboot to bootloader).
